@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>jQuery Sandwich Click</title>
+  </head>
+
+  <body>
+    <h1>Click to Eat Sandwich</h1>
+    <button id="sandwich1">Sandwich1</button>
+    <button id="sandwich2">Sandwich2</button>
+    <button id="sandwich3">Sandwich3</button>
+
+    <!-- Create three button elements each with an id and corresponding content for our sandwiches -->
+
+    <!-- BONUS: Render an image for each click event. You will need to declare an empty `<div>` with an id of `#image-div` for this -->
+
+    <!-- Link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+    var count1 = 0;
+    var count2 = 0; 
+    var count3 = 0;
+    $("#sandwich1").on("click",function() {
+      count1++;
+      alert("sandwich1 alert!!")
+      alert("How many sandwiches had been eaten: " + count1);
+    })
+
+    $("#sandwich2").on("click",function() {
+      count2++;
+      alert("sandwich2 alert!!")
+      alert("How many sandwiches had been eaten: " + count2);
+    })
+
+    $("#sandwich3").on("click",function() {
+      count3++;
+      alert("sandwich3 alert!!")
+      alert("How many sandwiches had been eaten: " + count3);
+    })
+
+      // Create three global variables for tracking the number of sandwiches eaten
+      //
+      // YOUR CODE HERE
+      //
+
+      // Here we create various "on click" events which capture clicks
+      // Inside each click event is the code to create an alert, update the counter, and show the updated count.
+      // Take note that you can chain events onto an element
+      // With this even if our ids are created at a later date our events will still always work
+      //
+      // YOUR CODE HERE
+      //
+    </script>
+  </body>
+</html>
